@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+  
+  e2e_tests:
+    build:
+      context: .
+      dockerfile: playwright.Dockerfile
+    depends_on:
+      - app
