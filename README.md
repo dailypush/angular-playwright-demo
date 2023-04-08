@@ -1,27 +1,60 @@
-# AngularPlaywrightDemo
+# Angular Playwright Demo
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.5.
+This project is an Angular application with end-to-end testing using Playwright and Cucumber. The app demonstrates a simple counter and input field functionality, and the tests ensure the functionality works as expected.
 
-## Development server
+## Table of Contents
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- [Getting Started](#getting-started)
+- [Running the Application](#running-the-application)
+- [Running End-to-End Tests](#running-end-to-end-tests)
+- [Application Structure](#application-structure)
 
-## Code scaffolding
+## Getting Started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+To get started, clone the repository and install the necessary dependencies.
 
-## Build
+1. Clone the repository:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+```bash
+git clone https://github.com/yourusername/angular-playwright-demo.git
+cd angular-playwright-demo
+```
+Install the dependencies:
+```bash
 
-## Running unit tests
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Running the Application
 
-## Running end-to-end tests
+To run the application, use the following command:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```bash
 
-## Further help
+npm start
+```
+This will start the development server and open the application in your default web browser. By default, the application will be available at http://localhost:4200.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Running End-to-End Tests
+
+To run the end-to-end tests, use the following command:
+
+```bash
+
+npm run e2e
+```
+
+This will execute the tests using Playwright and Cucumber. Test results will be displayed in the terminal.
+
+Application Structure
+
+The application is structured as follows:
+
+src/: The main source code of the Angular application.
+app/: Contains the Angular components, services, and related files.
+src/tests/cucumber/: The end-to-end test suite using Playwright and Cucumber.
+features/: Contains the Cucumber feature files written in Gherkin syntax.
+step-definitions/: Contains the step definition files that map the Gherkin steps to JavaScript functions using Playwright.
+Happy coding!
+
+sql
